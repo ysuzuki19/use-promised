@@ -11,7 +11,7 @@ const es_config = {
     file: 'dist/index.es.js',
     format: 'es',
   },
-  // external: ['react'],
+  external: ['react'],
   plugins: [
     typescript(),
     babel({
@@ -35,12 +35,12 @@ const umd_config = {
   output: {
     file: 'dist/index.umd.min.js',
     format: 'umd',
-    name: 'LibraryName',
+    name: 'usePromised',
     exports: 'named',
     indent: false,
-    // globals: { react: 'react' },
+    globals: { react: 'react' },
   },
-  // external: ['react'],
+  external: ['react'],
   plugins: [
     typescript(),
     babel({

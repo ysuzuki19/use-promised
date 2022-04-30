@@ -1,7 +1,7 @@
 {
-  "name": "npm-package-template",
-  "version": "1.0.0",
-  "description": "template repository for npm package",
+  "name": "@ysuzuki/use-promised",
+  "version": "0.0.0",
+  "description": "Hooks for handling promise without async or useEffect",
   "main": "./dist/index.umd.min.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
@@ -15,21 +15,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ysuzuki19/npm-package-template.git"
+    "url": "https://github.com/ysuzuki19/use-promised"
   },
   "keywords": [
     "typescript",
     "npm",
-    "package",
-    "rollup",
-    "template"
+    "react",
+    "hooks",
+    "package"
   ],
-  "author": "ysuzuki19 <ysuzuki.cpp@gmail.com> (https://ysuzuki19.github.io/)",
+  "author": "ysuzuki19 (https://ysuzuki19.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ysuzuki19/npm-package-template/issues"
+    "url": "https://github.com/ysuzuki19/use-promised/issues"
   },
-  "homepage": "https://github.com/ysuzuki19/npm-package-template#readme",
+  "homepage": "https://github.com/ysuzuki19/use-promised#readme",
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -40,5 +40,9 @@
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.8",
+    "react": "^18.1.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@ysuzuki19/use-promised",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hooks for handling promise without async or useEffect",
   "main": "./dist/index.umd.min.js",
   "module": "./dist/index.es.js",
@@ -44,5 +44,8 @@
   "dependencies": {
     "@types/react": "^18.0.8",
     "react": "^18.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
   }
 }

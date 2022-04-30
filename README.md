@@ -11,7 +11,6 @@ npm i @ysuzuki19/use-promised
 # how to use ( with jsonplaceholder )
 
 ```tsx
-import React from 'react';
 import usePromised from '@ysuzuki19/use-promised';
 
 interface Todo {
@@ -43,6 +42,31 @@ function App() {
     </>
   );
 }
-
-export default App;
 ```
+
+# API
+
+```ts
+usePromised<T>(fn, deps, option);
+```
+
+`fn` is function to return promise. (it is callable)
+
+`deps` is dependencies array (like `useEffect`).
+
+`option` is option for handling promise. it has following key-val.
+
+| key         | type   | must  | val                                       |
+| ----------- | ------ | ----- | ----------------------------------------- |
+| placeholder | T      | false | initial data                              |
+| interval    | number | false | interval time (ms) for continuous refetch |
+
+# status usage
+
+| name    | type       |                                        |
+| ------- | ---------- | -------------------------------------- |
+| data    | T          | result of promise                      |
+| loading | boolean    | is true while loading                  |
+| error   | boolean    | is true if promise failed              |
+| success | boolean    | is true if promise succeed             |
+| refresh | () => void | function for refreshing (without deps) |

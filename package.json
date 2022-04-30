@@ -1,6 +1,6 @@
 {
   "name": "@ysuzuki19/use-promised",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hooks for handling promise without async or useEffect",
   "main": "./dist/index.umd.min.js",
   "module": "./dist/index.es.js",

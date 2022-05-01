@@ -1,3 +1,5 @@
+[![npm badge](https://img.shields.io/npm/v/@ysuzuki19/use-promised?label=use-promised)](https://www.npmjs.com/package/@ysuzuki19/use-promised)
+
 # use-promised
 
 react hooks library for handing promise without `async` or `useEffect`.
